@@ -6,16 +6,18 @@ public class Cliente {
     private double renda;
     private char sexo;
     private int anoNascimento;
+    public String nome;
 
     // Construtor padrão
     public Cliente() {
     }
 
     // Construtor com parâmetros
-    public Cliente(double renda, char sexo, int anoNascimento) {
+    public Cliente(double renda, char sexo, int anoNascimento, String nome) {
         setRenda(renda);
         setAnoNascimento(anoNascimento);
         setSexo(sexo);
+        setNome(nome);
     }
 
     // Métodos getter e setter para o atributo renda
@@ -56,4 +58,16 @@ public class Cliente {
             System.out.println("O ano de nascimento deve estar entre 1900 e 2023.");
         }
     }
+    
+    // Métodos getter e setter para o atributo nome
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
 }
+
