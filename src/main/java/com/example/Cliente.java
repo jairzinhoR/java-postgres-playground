@@ -1,6 +1,7 @@
 package com.example;
 
 // ARQUIVO DA CLASSE CLIENTE
+
 public class Cliente {
     private double renda;
     private char sexo;
@@ -12,9 +13,9 @@ public class Cliente {
 
     // Construtor com parâmetros
     public Cliente(double renda, char sexo, int anoNascimento) {
-        this.renda = renda;
-        this.sexo = sexo;
-        this.anoNascimento = anoNascimento;
+        setRenda(renda);
+        setAnoNascimento(anoNascimento);
+        setSexo(sexo);
     }
 
     // Métodos getter e setter para o atributo renda
