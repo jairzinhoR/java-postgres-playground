@@ -1,28 +1,16 @@
 package com.example;
 
+//ARQUIVO DE INSTÂNCIAÇÃO DOS OBJETOS CLIENTE
 public class AppTeste {
     public static void main (String args[]) {
-        System.out.println();
-        System.out.println(2+2);
-        System.out.println();
+        Cliente cliente1 = new Cliente();
+        cliente1.setAnoNascimento(1987);
+        cliente1.setRenda(5450);
+        cliente1.setSexo('M');
 
-    // tipo nome da variável;
-    int idade;
-    idade = 11;
-    byte idadeEmByte = (byte)idade;
-
-    // tudo em uma linha só;
-    int peso = 50;
-
-    System.out.println("Idade é " + idadeEmByte);
-    System.out.println("Idade é " + idade);
-
-    System.out.println("Peso é " + peso);
-
-    byte gato = (byte)256;
-
-    System.out.println("Tenho essa quantidade de gatos: " + gato);
-
+        System.out.println(cliente1.getAnoNascimento());
+        System.out.println(cliente1.getRenda());
+        System.out.println(cliente1.getSexo());
 
     }
     
