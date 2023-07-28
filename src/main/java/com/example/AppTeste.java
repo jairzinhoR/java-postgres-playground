@@ -1,6 +1,6 @@
 package com.example;
 
-//ARQUIVO DE INSTÂNCIAÇÃO DOS OBJETOS CLIENTE
+//ARQUIVO DE INSTÂNCIAÇÃO DOS OBJETOS DA CLASSE CLIENTE CLIENTE
 public class AppTeste {
     public static void main (String args[]) {
         Cliente cliente1 = new Cliente();
