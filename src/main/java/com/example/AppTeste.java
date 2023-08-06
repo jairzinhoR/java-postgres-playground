@@ -7,7 +7,7 @@ public class AppTeste {
         cliente1.setAnoNascimento(1987);
         cliente1.setRenda(5450);
         cliente1.setSexo('M');
-        cliente1.setNome("Jairzinho");
+        cliente1.setNome("Jairzinho2");
         
         System.out.println("-----------------------");
         System.out.println(cliente1.getAnoNascimento());
