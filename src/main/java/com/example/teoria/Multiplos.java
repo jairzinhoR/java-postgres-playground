@@ -17,12 +17,12 @@ public class Multiplos {
                 intervalo.add(i);
             }     
         }
-        System.out.println("Aqui estão os números múltiplos de 87:");
+        System.out.println("Aqui estão os números múltiplos de " + numero + ":");
         System.out.println(intervalo);
     }
 
     public static void main(String[] args) {
-        Multiplos num87 = new Multiplos(1, 1000, 87);
+        Multiplos num87 = new Multiplos(31, 87, 3);
     }
 
 }
