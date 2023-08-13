@@ -1,4 +1,4 @@
-package com.example;
+package com.example.Backup;
 
 //ARQUIVO DE INSTÂNCIAÇÃO DOS OBJETOS DA CLASSE CLIENTE CLIENTE
 public class AppTeste {

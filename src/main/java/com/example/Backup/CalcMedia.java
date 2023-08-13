@@ -1,4 +1,4 @@
-package com.example;
+package com.example.Backup;
 import java.util.Scanner;
 public class CalcMedia {
     
