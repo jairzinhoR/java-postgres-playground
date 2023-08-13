@@ -2,6 +2,7 @@ package com.example.teoria;
 
 public class Conta {
     public int saldo;
+    public Object getSaldo;
 
     public Conta(){
     }
