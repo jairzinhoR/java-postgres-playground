@@ -1,5 +1,7 @@
 package com.example.teoria;
 
+import javax.swing.event.SwingPropertyChangeSupport;
+
 public class EntradaBar {
     public int idade;
     public boolean amigoDoDono;
