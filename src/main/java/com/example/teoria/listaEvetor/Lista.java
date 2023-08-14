@@ -23,6 +23,7 @@ public class Lista {
         gatos.addGatosList("Listrado");
 
         System.out.println(gatos.printGatos());
+        System.out.println(gatos.printGatos().get(1));
 
     }
 
