@@ -1,6 +1,7 @@
 package com.example.teoria.worker;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Worker {
     private String name;
@@ -21,13 +22,26 @@ public class Worker {
     }
 
     public void addContract(HourContract contract){
-        HourContract contract = new HourContract();
+        contracts.add(contract);
     }
 
     public void removeContract(HourContract contract){
+        contracts.remove(contract);
     }
 
-    public Double(int year, int month){
+    public Double income(int year, int month){
+        Double sum = baseSalary;
+        Calendar cal = Calendar.getInstance();
+        for (HourContract c: contracts){
+            cal.setTime(c.getDate());
+            int c_year = cal.get(Calendar.YEAR);        
+            int c_month = cal.get(Calendar.MONTH +1);
+                if (c_year == year && c_month == month){
+                    sum += c.totalValue(); 
+                }
+        }
+
+        return sum;
     }
 
     public String getName() {
@@ -66,8 +80,5 @@ public class Worker {
         return contracts;
     }
 
-    public void setContracts(List<HourContract> contracts) {
-        this.contracts = contracts;
-    }
 
 }
