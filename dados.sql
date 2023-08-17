@@ -200,6 +200,7 @@ INSERT INTO estado (id, nome, uf, regiao_id, area_km2, populacao) VALUES
      (27, 'Tocantins',          'TO', 1,  277466,  1584306);
 
 
+
 INSERT INTO cidade (id, nome, estado_id) VALUES
      (1, 'Afonso Cláudio', 8),
      (2, 'Água Doce do Norte', 8),
