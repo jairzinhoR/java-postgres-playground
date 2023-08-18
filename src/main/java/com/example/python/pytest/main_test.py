@@ -1,6 +1,6 @@
 from main import MinhaPilha
 
-def test_constuctor():
+def test_adicionar():
     minha_pilha = MinhaPilha()
     minha_pilha.adicionar(10)
     minha_pilha.adicionar(20)
