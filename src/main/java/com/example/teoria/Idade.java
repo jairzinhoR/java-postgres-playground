@@ -2,6 +2,8 @@ package com.example.teoria;
 
 public class Idade {
     private int idade;
+    private int anterior;
+    private int posterior;
 
     public Idade(int idade){
         this.idade = idade;
@@ -11,21 +13,23 @@ public class Idade {
         return idade;
     }
 
-    public void anterior() {
-        int anterior = idade - 1;
-        System.out.println(anterior);
+    public int anterior() {
+        this.anterior = idade - 1;
+       return anterior;
     }
     
-    public void posterior() {
-        int posterior = idade + 1;
-        System.out.println(posterior);
+    public int posterior() {
+        this.posterior = idade + 1;
+        return posterior;
     } 
 
     public static void main(String[] args) {
         
-        Idade jairzinho = new Idade(35);
+        Idade jairzinho = new Idade(36);
         System.out.println(jairzinho.getIdade());
         jairzinho.anterior();
         jairzinho.posterior();
+        System.out.println(jairzinho.anterior);
+        System.out.println(jairzinho.posterior);
     }
 }

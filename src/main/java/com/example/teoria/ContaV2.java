@@ -30,18 +30,18 @@ public class ContaV2 {
         // Método para transferir um valor para outra conta
         boolean transfere(ContaV2 destino, double valor) {
             boolean retirou = this.saca(valor);
-            if (retirou == false) {
-                // Não deu pra sacar!
-                return false;
-            } else {
+            if (retirou == true) {
                 destino.deposita(valor);
                 return true;
+            } else {
+                // Não deu pra sacar
+                return false;
             }
         }
 
         public static void main (String[] args) {
             ContaV2 contaSERPRO = new ContaV2();
-            contaSERPRO.saldo = 600000000;
+            contaSERPRO.saldo = 6;
             ContaV2 correnteJairzinho = new ContaV2();
             correnteJairzinho.saldo = 1000;
             ContaV2 poupancaJairzinho = new ContaV2();
@@ -60,8 +60,5 @@ public class ContaV2 {
             System.out.println("Conta Corrente Jairzinho: " + correnteJairzinho.saldo);
             System.out.println("Poupanca Jairzinho: " + poupancaJairzinho.saldo);
 
-
-
-           
         }
 }
