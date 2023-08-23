@@ -3,32 +3,29 @@ package com.example.desafios;
 public class Parentese {
 
     public boolean testParent() {
-        boolean x = true;
-        String s = "[[]";
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(') { 
-                if (s.charAt(i+1) == ')'){
-                    x = true;
-                    i++;
-                }
-            }
-            else if (s.charAt(i) == '[') { 
-                if (s.charAt(i+1) == ']'){
-                    x = true;
-                    i++;                    
-                }
-            }            
-            else if (s.charAt(i) == '{') { 
-                if (s.charAt(i+1) == '}'){
-                    x = true;
-                    i++;
-                }
-            }
-            else {x = false;}
+        boolean x = false;
+        String s = "[)]";
+
+        if (s.charAt(0) == '('){
+            if (s.charAt(s.length()-1) == ')'){
+                x= true;
+            } else {x = false;}
+        }
+
+        if (s.charAt(0) == '['){
+            if (s.charAt(s.length()-1) == ']'){
+                x= true;
+            } else {x = false;}
+        }
+
+        if (s.charAt(0) == '{'){
+            if (s.charAt(s.length()-1) == '}'){
+                x= true;
+            } else {x = false;}
         }
 
         return x;
-
+        
     }
 
     public static void main(String[] args) {
