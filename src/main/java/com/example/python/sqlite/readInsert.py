@@ -11,11 +11,11 @@ try:
     #    idade INTEGER,
     #    email TEXT)''')
     
-    #cursor.execute("INSERT INTO pessoas VALUES ('1','Jair',35,'jair.rochant@gmail.com')")
-    #cursor.execute("INSERT INTO pessoas VALUES('2', 'Dora', 66, 'dora@gmail.com')")
-    #cursor.execute("INSERT INTO pessoas VALUES('3','Jair Pai', 64, 'jrof@gmail.com')")
-    #cursor.execute("INSERT INTO pessoas VALUES('Laercio', 37, 'jkianne@gmail.com')")
-    #cursor.execute("INSERT INTO pessoas VALUES('Jessica', 32, 'laerciofan@gmail.com')")
+    #cursor.execute("INSERT INTO pessoas VALUES ('Jair',35,'jair.rochant@gmail.com')")
+    cursor.execute("INSERT INTO pessoas VALUES(2, 'Dora', 66, 'dora@gmail.com')")
+    cursor.execute("INSERT INTO pessoas VALUES(3, 'Jair Pai', 64, 'jrof@gmail.com')")
+    cursor.execute("INSERT INTO pessoas VALUES(4, 'Laercio', 37, 'jkianne@gmail.com')")
+    cursor.execute("INSERT INTO pessoas VALUES(5, 'Jessica', 32, 'laerciofan@gmail.com')")
 
     #INSERT COM VARIÁVEIS
     #nome = "Amelie"
