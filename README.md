@@ -1,5 +1,7 @@
 ## Postgres Playground
 
+Repositório com arquivos de testes e exercícios do Curso de Java e JDBC do professor Manoel Campos. Curso preparatório para a prova prática do concurso do SERPRO 2023.
+
 [![](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/manoelcampos/java-postgres-playground)
 
 > **Warning**
